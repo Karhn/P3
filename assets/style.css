@@ -6,7 +6,8 @@
 body {
     display: flex;
     justify-content: center;
-    margin: 0;
+    margin: 0 auto;
+    width: 100%;
 }
 
 .main-container {
@@ -28,9 +29,14 @@ a {
     color: #FFFFFF;
     font-weight: 500;
     font-size: 16px;
+    cursor: pointer;
+    transition: box-shadow 0.3s ease-in-out;
 }
 
-
+.btn:hover {
+    background: linear-gradient(0deg, rgba(147,86,220,1) 0%, rgba(255,121,218,1) 95%);
+    box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.35);
+}
 
 /****** Header ******/
 
@@ -116,17 +122,21 @@ input::placeholder, .map-pin {
 /****** Fonctionnement ******/
 
 .section-fonctionnement {
-    padding-top: 48px;
+    padding-top: 38px;
+    padding-bottom: 58px;
+    margin: 0 15px;
+}
+
+.fonctionnement-title {
+    padding-bottom: 25px;
 }
 
 
 .fonctionnement {
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
     gap: 25px;
-    padding-bottom: 68px;
 }
 
 .filtre-fonctionnement {
@@ -174,7 +184,13 @@ input::placeholder, .map-pin {
 /****** Restaurants ******/
 
 .restaurants {
+    padding-top: 38px;
+    padding-bottom: 58px;
     background-color: #EAEAEA;
+}
+
+.restaurant-title {
+    padding-left: 15px;
 }
 
 .restaurants-cards {
@@ -184,7 +200,6 @@ input::placeholder, .map-pin {
     gap: 20px;
     max-width: 600px;
     padding: 18px;
-    padding-bottom: 66px;
 }
 
 .card {
@@ -200,10 +215,14 @@ input::placeholder, .map-pin {
     right: 15px;
     background-color: #99E2D0;
     color: #008766;
-    padding: 0 10px;
     font-size: 14px;
     font-weight: 500;
     border-radius: 2px;
+    padding: 7px 9px;
+}
+
+.nouveau-badge p {
+    margin: 0;
 }
 
 .restaurants-cards img {
@@ -229,16 +248,44 @@ input::placeholder, .map-pin {
     margin-top: 5px;
 }
 
-.heart-btn {
-    background: none;
-    border: none;
-    font-size: 22px;
+/****** Coeur ******/
+
+.heart-checkbox {
+    display: none;
+}
+
+.heart-label {
+    position: relative;
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    padding-right: 10px;
+    padding-top: 10px;
     cursor: pointer;
-    transition: color 0.3s ease-in-out;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 5px;
+}
+
+.full-heart, .empty-heart {
+    font-size: 24px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: opacity 0.5s ease;
+}
+
+.full-heart {
+    opacity: 0;
+    background: linear-gradient(0deg, rgba(147,86,220,1) 0%, rgba(255,121,218,1) 95%);
+    background-clip: text;
+    color: transparent;
+    transition: opacity 0.5s ease;
+}
+
+.heart-checkbox:checked + label .full-heart {
+    opacity: 1;
+}
+
+.heart-checkbox:checked + label .empty-heart {
+    opacity: 0;
 }
 
 /****** Footer ******/
@@ -250,17 +297,20 @@ input::placeholder, .map-pin {
 }
 
 .footer-container {
-    max-width: 400px;
+    display: flex;
+    flex-direction: column;
 }
 
-.footer-logo {
-    width: 120px;
-    display: block;
-    margin-bottom: 10px;
-    filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(288deg) brightness(102%) contrast(102%);
+.footer-title {
+    font-family: Shrikhand, cursive;
+    font-weight: 400;
+    font-style: italic;
+    font-size: 18px;
 }
 
 .footer-links {
+    display: flex;
+    flex-direction: column;
     list-style: none;
     padding: 0;
 }
@@ -273,21 +323,32 @@ input::placeholder, .map-pin {
     margin-bottom: 8px;
 }
 
-.footer-links i {
-    font-size: 16px;
-    width: 10px;
+.icon-footer {
+    width: 12px;
+    height: 12px;
     padding-right: 10px;
 }
 
 /****** Responsive Design ******/
 
-@media (min-width:768px) {
+@media screen and (min-width:768px) {
     
+    .main-container {
+        width: 100%;
+        max-width: 1440px;
+        justify-content: center;
+        margin: 0 auto;
+    }
+
+    .headline {
+        width: 600px;
+    }
+
     .restaurants-cards {
         grid-template-columns: repeat(2, 1fr);
         max-width: 1080px;
-        gap: 50px;
-
+        row-gap: 50px;
+        column-gap: 100px;
     }
 
     .fonctionnement {
@@ -297,6 +358,21 @@ input::placeholder, .map-pin {
         align-items: center;
         gap: 25px;
         padding-bottom: 68px;
+    }
+
+    .footer-title {
+        order: 2;
+        margin: 25px;
+    }
+
+    .footer-container, .footer-links {
+        flex-direction: row;
+        justify-content: flex-end;
+        gap: 25px;
+    }
+
+    .icon-footer {
+        margin-left: 20px;
     }
 
 }
