@@ -124,13 +124,13 @@ input::placeholder, .map-pin {
 .section-fonctionnement {
     padding-top: 38px;
     padding-bottom: 58px;
-    margin: 0 15px;
+    margin: 0 auto;
+    padding: 0 15px;
 }
 
 .fonctionnement-title {
-    padding-bottom: 25px;
+    margin-bottom: 25px;
 }
-
 
 .fonctionnement {
     display: flex;
@@ -335,13 +335,42 @@ input::placeholder, .map-pin {
     
     .main-container {
         width: 100%;
-        max-width: 1440px;
         justify-content: center;
         margin: 0 auto;
     }
 
-    .headline {
-        width: 600px;
+    .exploration-restaurant {
+        padding-top: 30px;
+        padding-bottom: 30px;
+    }
+
+    .section-fonctionnement {
+        padding-bottom: 50px;
+    }
+
+    .restaurants {
+        padding-top: 15px;
+        padding-bottom: 12px;
+    }
+
+    .headline, .headline-text, .headline-title {
+        width: 700px;
+    }
+
+    .headline-title {
+        font-size: 40px;
+    }
+
+    .test {
+        max-width: 1080px;
+        align-content: center;
+        margin: 0 auto;
+    }
+
+    .test-2 {
+        max-width: 1050px;
+        align-content: center;
+        margin: 0 auto;
     }
 
     .restaurants-cards {
@@ -357,22 +386,46 @@ input::placeholder, .map-pin {
         justify-content: center;
         align-items: center;
         gap: 25px;
-        padding-bottom: 68px;
+        padding: 0 15px;
     }
+    
 
     .footer-title {
         order: 2;
         margin: 25px;
     }
 
-    .footer-container, .footer-links {
-        flex-direction: row;
+    .footer-container {
+        display: flex;
         justify-content: flex-end;
-        gap: 25px;
+        align-items: center;
+        flex-direction: row;
+        width: 100%;
+        max-width: 1440px;
+        margin: 0 auto;
+    }
+    
+    .footer-links {
+        display: flex;
+        justify-content: space-between;
+        gap: 40px;
     }
 
-    .icon-footer {
-        margin-left: 20px;
+    .footer-links li {
+        margin: 0px;
+    }
+
+    .footer-groupe {
+        display: flex;
+        gap: 20px;
+    }
+
+    .footer-mention {
+        padding-left: 30px;
+    }
+
+    .footer-groupe a {
+        padding-right: 60px;
     }
 
 }
