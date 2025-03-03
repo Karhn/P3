@@ -53,7 +53,6 @@ a {
     align-items: center;
     height: 63px;
     box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.15);
-    z-index: 10;
 }
 
 .logo {
@@ -122,10 +121,8 @@ input::placeholder, .map-pin {
 /****** Fonctionnement ******/
 
 .section-fonctionnement {
-    padding-top: 38px;
-    padding-bottom: 58px;
     margin: 0 auto;
-    padding: 0 15px;
+    padding: 38px 15px 58px 15px;
 }
 
 .fonctionnement-title {
@@ -226,7 +223,6 @@ input::placeholder, .map-pin {
 }
 
 .restaurants-cards img {
-    display: block;
     object-fit: cover;
     width: 100%;
     height: 180px;

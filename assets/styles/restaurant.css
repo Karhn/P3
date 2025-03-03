@@ -1,0 +1,115 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+.back-button {
+    display: flex;
+    align-items: center;
+    font-size: 24px;
+    text-decoration: none;
+    color: black;
+    position: absolute;
+    left: 10px;
+    top: 20px;
+    cursor: pointer;
+}
+
+.logo-restaurant {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+}
+
+.menu-container {
+    background-color: #F6F6F6;
+    padding: 20px;
+    border: 20px 20px 0 0;
+    margin-top: -20px;
+    position: relative;
+}
+
+.menu-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.title-menu {
+    font-family: Shrikhand, cursive;
+    font-weight: 400;
+    font-style: italic;
+    font-size: 28px;
+}
+
+/****** Menu Section ******/
+
+.section-menu {
+    margin-top: 20px;
+}
+
+.section-menu-title {
+    font-size: 18px;
+    font-weight: 400;
+    margin-bottom: 10px;
+}
+
+/****** Menu Items ******/
+
+.menu-item {
+    background: white;
+    padding: 15px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: end;
+    margin-bottom: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+
+.menu-item .menu-text {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    transition: transform 0.3s ease-in-out;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.menu-item p {
+    font-size: 15px;
+    font-weight: light;
+}
+
+.menu-price {
+    font-weight: bold;
+}
+
+.check-container {
+    position: absolute;
+    display: flex;
+    right: -50px;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: #99e2d0;
+    padding: 30px 20px;
+    transition: right 0.3s ease-in-out;
+}
+
+.menu-item:hover .check-container {
+    right: 0;
+}
+
+.menu-item:hover .menu-text {
+    text-overflow: ellipsis; 
+}
+
+.icon-check {
+    color: white;
+}
