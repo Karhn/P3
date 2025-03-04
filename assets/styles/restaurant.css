@@ -36,6 +36,7 @@
 
 .menu-header {
     padding-top: 10px;
+    padding-bottom: 22px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -47,18 +48,31 @@
     font-weight: 400;
     font-style: italic;
     font-size: 28px;
+    margin-left: 4px;
+}
+
+.heart-checkbox {
+    margin-right: 24px;
 }
 
 /****** Menu Section ******/
 
 .section-menu {
     margin-top: 20px;
+    margin-bottom: 40px;
 }
 
 .section-menu-title {
     font-size: 18px;
     font-weight: 400;
     margin-bottom: 10px;
+}
+
+hr {
+    margin-top: 5px;
+    margin-bottom: 12px;
+    width: 46px;
+    border: 2px solid #99e2d0 ;
 }
 
 /****** Menu Items ******/
@@ -71,7 +85,7 @@
     display: flex;
     justify-content: space-between;
     align-items: end;
-    margin-bottom: 10px;
+    margin-bottom: 12px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
     position: relative;
     overflow: hidden;
@@ -93,20 +107,20 @@
 
 .menu-price {
     font-weight: bold;
-    transition: margin 0.3s ease-in-out;
+    transition: margin 0.2s ease-in-out;
     flex-shrink: 0;
 }
 
 .menu-item::after {
     content: "";
     position: absolute;
-    right: -100px;
+    right: -60px;
     top: 0;
-    width: 100px;
+    width: 60px;
     height: 100%;
     background-color: #99e2d0;
     border-radius: 10px;
-    transition: margin 0.3 ease-in-out;
+    transition: margin 0.2s ease-in-out;
 }
 
 .toggle {
@@ -115,29 +129,32 @@
 
 .check-container {
     position: absolute;
-    right: -100px;
+    right: 0;
     top: 50%;
     transform: translateY(-50%);
     background-color: #99e2d0;
     padding: 28px 20px;
-    transition: margin 0.3s ease-in-out;
-}
-
-.toggle:checked ~ .menu-text + .menu-price {
-    transform: translateX(-60px);
+    margin-right: -60px;
+    transition: margin 0.2s ease-in-out;
 }
 
 .toggle:checked ~ .check-container {
-    right: 0px;
+    margin-right: 0px;
 }
 
-.toggle:checked + .menu-item::after {
-    right: 0px;
+.toggle:checked ~ .menu-price {
+    margin-right: 60px;
 }
 
 .icon-check {
     color: white;
     font-size: 20px;
+}
+
+.btn-container {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 40px;
 }
 
 @media screen and (min-width:768px) {
@@ -147,27 +164,15 @@
     }
 
     .menu-item:hover .check-container {
-        right: 0;
+        margin-right: 0;
     }
 
     .menu-item:hover .menu-price {
-        transform: translateX(-60px);
+        margin-right: 60px;
     }
 
     .toggle {
         pointer-events: none;
-    }
-
-    .menu-price {
-        transition:  right 0.3s ease-in-out;
-    }
-
-    .menu-item::after {
-        transition:  right 0.3s ease-in-out;
-    }
-    
-    .check-container {
-        transition: right 0.3s ease-in-out;
     }
 
 
@@ -176,5 +181,16 @@
         align-content: center;
         margin: 0 auto;
         margin-top: -55px;
+    }
+
+    .section-menu {
+        max-width: 634px;
+        align-content: center;
+        margin: auto;
+    }
+
+    .logo-restaurant {
+        height: 383px;
+        margin: 0;
     }
 }
