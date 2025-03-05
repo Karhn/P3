@@ -30,15 +30,15 @@
            </div>
         </nav>
         <main>
-            <section class="hero-image">
+            <div class="hero-image">
                <img src="/assets/images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg" alt="Restaurant La palette du goût" class="logo-restaurant">
-            </section>
+            </div>
          
          <section class="menu-container">
             <header class="menu-header">
                <h1 class="title-menu"> La palette du goût </h1> 
                <div class="card-saving">
-                  <input type="checkbox" id="heart-saving" class="heart-checkbox"/>
+                  <input type="checkbox" id="heart-saving" class="heart-checkbox">
                   <label for="heart-saving" class="heart-label">
                      <i class="fa-regular fa-heart empty-heart"></i>
                      <i class="fa-solid fa-heart full-heart"></i>
@@ -47,19 +47,20 @@
             </header>
             
             <section class="section-menu">
-               <h2 class="section-menu-title"> ENTRÉES <hr> </h2>
+               <h2 class="section-menu-title"> ENTRÉES </h2>
+               <hr>
    
                <article>
                   <label class="menu-item">
                      <input type="checkbox" class="toggle">
-                     <div class="menu-text">
+                     <span class="menu-text">
                         <h3> Fricassée d'escargots </h3>
                         <p> Au piment d'Espelette </p>
-                     </div>
-                     <div class="menu-price"> 25€ </div>
-                     <div class="check-container">
+                     </span>
+                     <span class="menu-price"> 25€ </span>
+                     <span class="check-container">
                         <i class="fa-solid fa-circle-check icon-check"></i>
-                     </div>
+                     </span>
                   </label>
                </article>
    
@@ -93,8 +94,8 @@
             </section>
 
             <section class="section-menu">
-               <h2 class="section-menu-title"> PLATS <hr> </h2>
-   
+               <h2 class="section-menu-title"> PLATS </h2>
+               <hr>
                <article>
                   <label class="menu-item">
                      <input type="checkbox" class="toggle">
@@ -139,8 +140,8 @@
             </section>
 
             <section class="section-menu">
-               <h2 class="section-menu-title"> DESSERTS <hr> </h2>
-
+               <h2 class="section-menu-title"> DESSERTS </h2>
+               <hr>
                <article>
                   <label class="menu-item">
                      <input type="checkbox" class="toggle">
@@ -183,9 +184,9 @@
                   </label>
                </article>
             </section>
-            <section class="btn-container">
+            <div class="btn-container">
                <button class="btn"> Commander </button>
-            </section>
+            </div>
          </section>
 
          </main>
@@ -193,12 +194,12 @@
          <div class="footer-container">
             <h3 class="footer-title">ohmyfood</h3>
             <div class="footer-links">
-               <div class="footer-groupe">
+               <ol class="footer-groupe">
                   <li> <i class="fa-solid fa-utensils icon-footer"></i> Proposer un restaurant </li>
                   <li> <i class="fa-solid fa-handshake-angle icon-footer"></i> Devenir partenaire </li>
                   <li class="footer-mention"> Mentions légales </li>
                   <li> <a href="mailto:ohmyfood@goodfood.fr"> Contact </a> </li> 
-               </div>
+               </ol>
             </div>
          </div>
       </footer>
