@@ -141,7 +141,7 @@ a {
 
 .section-fonctionnement {
     margin: 0 auto;
-    padding: 38px 15px 58px 15px;
+    padding: 28px 15px 58px 15px;
 
     @media screen and (min-width:768px) {
         padding-bottom: 50px;
@@ -213,7 +213,7 @@ a {
 /****** Restaurants ******/
 
 .restaurants {
-    padding-top: 38px;
+    padding-top: 54px;
     padding-bottom: 58px;
     background-color: #EAEAEA;
 
@@ -224,6 +224,7 @@ a {
 
     .restaurant-title {
         padding-left: 15px;
+        margin: 0;
     }
 
     .restaurants-cards {
@@ -371,8 +372,8 @@ a {
         .footer-title {
             font-family: Shrikhand, cursive;
             font-weight: 400;
-            font-style: italic;
             font-size: 18px;
+            margin: 0;
 
             @media screen and (min-width: 768px) {
                 order: 2;
@@ -385,7 +386,6 @@ a {
             display: flex;
             flex-direction: column;
             list-style: none;
-            padding: 0;
 
             @media screen and (min-width: 768px) {
                 justify-content: space-between;
@@ -395,8 +395,9 @@ a {
             .footer-groupe {
                 display: flex;
                 flex-direction: column;
-                gap: 20px;
                 padding: 0;
+                gap: 8px;
+                margin-bottom: 0;
 
                 @media screen and (min-width: 768px) {
                     flex-direction: row;
@@ -407,19 +408,20 @@ a {
             li {
                 display: flex;
                 align-items: center;
-                gap: 10px;
-                font-size: 16px;
-                margin-bottom: 8px;
+                gap: 8px;
 
                 @media screen and (min-width: 768px) {
                     margin: 0px;
                 }
 
                 .icon-footer {
-                    width: 12px;
-                    height: 12px;
-                    padding-right: 10px;
+                    font-size: 16px;
+                    width: 16px;
+                    height: 16px;
+                    transform: scale(0.75,0.81);
+                    display: inline-block;
                 }
+
             }
 
             .footer-mention {

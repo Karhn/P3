@@ -46,7 +46,6 @@
 .title-menu {
     font-family: Shrikhand, cursive;
     font-weight: 400;
-    font-style: italic;
     font-size: 28px;
     margin-left: 4px;
 }
@@ -62,11 +61,10 @@
 .section-menu-title {
     font-size: 18px;
     font-weight: 400;
-    margin-bottom: 10px;
+    margin-bottom: 5px;
 }
 
 hr {
-    margin-top: 5px;
     margin-bottom: 12px;
     width: 46px;
     border: 2px solid #99e2d0 ;
@@ -89,13 +87,12 @@ hr {
 
 .menu-content {
     display: flex;
-    align-items: center;
+    align-items: end;
     flex-grow: 1;
     justify-content: space-between;
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
-    font: 15px;
 }
 
 .menu-text {
@@ -107,13 +104,22 @@ hr {
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
+}
+
+.menu-text p {
     font-size: 15px;
+}
+
+.menu-text h3 {
+    font-size: 18px;
+    margin-bottom: 5px;
 }
 
 .menu-price {
     font-weight: bold;
     transition: margin 0.2s ease-in-out;
     flex-shrink: 0;
+    color: #353535;
 }
 
 .check-container {

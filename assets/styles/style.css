@@ -138,7 +138,7 @@ a {
 /****** Fonctionnement ******/
 .section-fonctionnement {
   margin: 0 auto;
-  padding: 38px 15px 58px 15px;
+  padding: 28px 15px 58px 15px;
 }
 @media screen and (min-width: 768px) {
   .section-fonctionnement {
@@ -203,7 +203,7 @@ a {
 
 /****** Restaurants ******/
 .restaurants {
-  padding-top: 38px;
+  padding-top: 54px;
   padding-bottom: 58px;
   background-color: #EAEAEA;
 }
@@ -215,6 +215,7 @@ a {
 }
 .restaurants .restaurant-title {
   padding-left: 15px;
+  margin: 0;
 }
 .restaurants .restaurants-cards {
   display: grid;
@@ -343,8 +344,8 @@ a {
 .footer .footer-container .footer-title {
   font-family: Shrikhand, cursive;
   font-weight: 400;
-  font-style: italic;
   font-size: 18px;
+  margin: 0;
 }
 @media screen and (min-width: 768px) {
   .footer .footer-container .footer-title {
@@ -356,7 +357,6 @@ a {
   display: flex;
   flex-direction: column;
   list-style: none;
-  padding: 0;
 }
 @media screen and (min-width: 768px) {
   .footer .footer-container .footer-links {
@@ -367,8 +367,9 @@ a {
 .footer .footer-container .footer-links .footer-groupe {
   display: flex;
   flex-direction: column;
-  gap: 20px;
   padding: 0;
+  gap: 8px;
+  margin-bottom: 0;
 }
 @media screen and (min-width: 768px) {
   .footer .footer-container .footer-links .footer-groupe {
@@ -379,9 +380,7 @@ a {
 .footer .footer-container .footer-links li {
   display: flex;
   align-items: center;
-  gap: 10px;
-  font-size: 16px;
-  margin-bottom: 8px;
+  gap: 8px;
 }
 @media screen and (min-width: 768px) {
   .footer .footer-container .footer-links li {
@@ -389,9 +388,11 @@ a {
   }
 }
 .footer .footer-container .footer-links li .icon-footer {
-  width: 12px;
-  height: 12px;
-  padding-right: 10px;
+  font-size: 16px;
+  width: 16px;
+  height: 16px;
+  transform: scale(0.75, 0.81);
+  display: inline-block;
 }
 .footer .footer-container .footer-links .footer-mention {
   margin: 0px;
