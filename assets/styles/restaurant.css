@@ -8,13 +8,14 @@
 .back-button {
     display: flex;
     align-items: center;
-    font-size: 24px;
+    font-size: 20px;
     text-decoration: none;
     color: black;
     position: absolute;
-    left: 10px;
-    top: 20px;
+    left: 13px;
+    top: 23px;
     cursor: pointer;
+    z-index: 2;
 }
 
 .logo-restaurant {
@@ -40,7 +41,6 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: 95%;
 }
 
 .title-menu {
@@ -59,14 +59,14 @@
 }
 
 .section-menu-title {
-    font-size: 18px;
-    font-weight: 400;
+    font-size: 16px;
+    font-weight: 300;
     margin-bottom: 5px;
 }
 
 hr {
     margin-bottom: 12px;
-    width: 46px;
+    width: 40px;
     border: 2px solid #99e2d0 ;
 }
 
@@ -108,6 +108,7 @@ hr {
 
 .menu-text p {
     font-size: 15px;
+    font-weight: 300;
 }
 
 .menu-text h3 {
@@ -182,17 +183,31 @@ hr {
         max-width: 1055px;
         align-content: center;
         margin: 0 auto;
-        margin-top: -55px;
+        margin-top: -45px;
     }
 
     .section-menu {
         max-width: 634px;
         align-content: center;
-        margin: auto;
+        margin: 20px auto;
     }
 
     .logo-restaurant {
         height: 383px;
         margin: 0;
+    }
+
+    .menu-header {
+        justify-content: center;
+        margin: 0 auto;
+        width: 300px;
+    }
+
+    .card-saving {
+        right: -24px;
+    }
+
+    .back-button {
+        top: 38px;
     }
 }
