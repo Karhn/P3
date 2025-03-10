@@ -4,18 +4,14 @@
   justify-content: center;
   width: 100%;
 }
-.header-nav .header-logo {
+.header-nav .header-logo,
+.header-nav .header-logo-restaurants-page {
   display: flex;
   justify-content: center;
   align-items: center;
   height: 63px;
   box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.1490196078);
   z-index: 1;
-}
-@media screen and (min-width: 768px) {
-  .header-nav .header-logo {
-    height: 96px;
-  }
 }
 
 .logo {
@@ -30,6 +26,11 @@
   justify-content: center;
   align-items: center;
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.2509803922);
+}
+@media screen and (min-width: 768px) {
+  .city-input {
+    box-shadow: none;
+  }
 }
 .city-input input {
   background-color: #EAEAEA;
@@ -49,6 +50,15 @@
   color: #353535;
 }
 
+@media screen and (min-width: 768px) {
+  .header-nav .header-logo,
+  .header-nav .header-logo-restaurants-page {
+    height: 96px;
+  }
+  .header-nav .header-logo {
+    box-shadow: none;
+  }
+}
 .btn {
   width: 218px;
   height: 50px;
@@ -94,7 +104,7 @@
   position: absolute;
   top: 0;
   left: 0;
-  transition: opacity ease;
+  transition: opacity 1s ease;
 }
 .card-saving .heart-label .full-heart {
   opacity: 0;
@@ -102,17 +112,17 @@
   -webkit-background-clip: text;
           background-clip: text;
   color: transparent;
-  transition: opacity ease;
-}
-.card-saving .heart-label .full-heart-1 {
-  opacity: 1;
-  background: linear-gradient(0deg, rgb(147, 86, 220) 0%, rgb(255, 121, 218) 95%);
-  -webkit-background-clip: text;
-          background-clip: text;
-  color: transparent;
-  transition: opacity 0.5s ease;
+  transition: opacity 1s ease;
 }
 
+@media screen and (min-width: 768px) {
+  .card-saving .heart-label:hover .full-heart {
+    opacity: 1;
+  }
+  .card-saving .heart-label:hover .empty-heart {
+    opacity: 0;
+  }
+}
 .footer {
   background-color: #353535;
   color: white;
@@ -142,7 +152,7 @@
   font-family: Shrikhand, cursive;
   font-weight: 400;
   font-size: 18px;
-  margin: 0;
+  margin-bottom: 16px;
 }
 @media screen and (min-width: 768px) {
   .footer .footer-container .footer-title {
@@ -206,6 +216,11 @@
   .footer .footer-container .footer-links .footer-groupe a {
     padding-right: 80px;
   }
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
 }
 
 /****** General ******/
