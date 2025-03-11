@@ -1,7 +1,8 @@
+@import "variables";
 
 .footer {
-    background-color: #353535;
-    color: white;
+    background-color: $color-text;
+    color: $color-white;
     padding: 20px;
 
     @media screen and (min-width: 768px) {
@@ -23,9 +24,9 @@
         }
 
         .footer-title {
-            font-family: Shrikhand, cursive;
+            font-family: $font-secondary;
             font-weight: 400;
-            font-size: 18px;
+            font-size: $font-size-item-title;
             margin-bottom: 16px;
 
             @media screen and (min-width: 768px) {
@@ -69,7 +70,7 @@
                 }
 
                 .icon-footer {
-                    font-size: 16px;
+                    font-size: $font-size-menu-title;
                     width: 16px;
                     height: 16px;
                     transform: scale(0.75,0.81);

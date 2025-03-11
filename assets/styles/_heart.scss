@@ -1,3 +1,4 @@
+@import "variables";
 
 .card-saving {
     position: absolute;
@@ -37,7 +38,7 @@
 
         .full-heart {
             opacity: 0;
-            background: linear-gradient(0deg, #9356dc 0%, #ff79da 95%);
+            background: $color-background-btn;
             background-clip: text;
             color: transparent;
             transition: opacity 1s ease;
