@@ -9,11 +9,6 @@
     padding-top: 36px;
     padding-bottom: 57px;
 
-    @media screen and (min-width: 768px) {
-        padding-top: 30px;
-        padding-bottom: 30px;
-    }
-
     .headline {
         display: flex;
         flex-direction: column;
@@ -21,20 +16,11 @@
         align-items: center;
         text-align: center;
 
-        @media screen and (min-width: 768px) {
-            width: 700px;
-        }
-
         .headline-title {
             font-size: 24px;
             font-weight: 700;
             width: 275px;
             margin: 0;
-
-            @media screen and (min-width: 768px) {
-                width: 700px;
-                font-size: $font-size-title-desktop;
-            }
         }
 
         .headline-text {
@@ -43,23 +29,16 @@
             width: 315px;
             font-size: 18px;
             font-weight: 300;
-
-            @media screen and (min-width: 768px) {
-                width: 700px;
-            }
         }
     }
 }
+
 
 /****** Fonctionnement ******/
 
 .section-fonctionnement {
     margin: 0 auto;
     padding: 28px 15px 58px 15px;
-
-    @media screen and (min-width:768px) {
-        padding-bottom: 50px;
-    }
 
     .fonctionnement-title {
         margin-bottom: 25px;
@@ -70,15 +49,6 @@
         flex-direction: column;
         align-items: center;
         gap: 25px;
-
-        @media screen and (min-width: 768px) {
-            display: flex;
-            flex-direction: row;
-            justify-content: center;
-            align-items: center;
-            gap: 25px;
-            padding: 0 15px;
-        }
 
         .filtre-fonctionnement {
             display: flex;
@@ -132,11 +102,6 @@
     padding-bottom: 58px;
     background-color: $color-secondary;
 
-    @media screen and (min-width:768px) {
-        padding-top: 30px;
-        padding-bottom: 12px;
-    }
-
     .restaurant-title {
         padding-left: 15px;
         margin: 0;
@@ -149,14 +114,6 @@
         gap: 20px;
         max-width: 600px;
         padding: 18px;
-
-        @media screen and (min-width: 768px) {
-            grid-template-columns: repeat(2, 1fr);
-            max-width: 1080px;
-            row-gap: 50px;
-            column-gap: 100px;
-        }
-            
         
         .card {
             background: white;
@@ -212,6 +169,48 @@
 /****** Responsive Design ******/
 
 @media (min-width: 768px) {
+
+    .exploration-restaurant {
+        padding-top: 30px;
+        padding-bottom: 30px;
+
+        .headline {
+            width: 700px;
+
+            .headline-title {
+                width: 700px;
+                font-size: $font-size-title-desktop;
+            }
+
+            .headline-text {
+                width: 700px;
+            }
+        }
+    }
+
+    .section-fonctionnement {
+        padding-bottom: 50px;
+
+        .fonctionnement {
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            padding: 0 15px;
+        }
+    }
+
+    .restaurants {
+        padding-top: 30px;
+        padding-bottom: 12px;
+
+        .restaurants-cards {
+            grid-template-columns: repeat(2, 1fr);
+            max-width: 1080px;
+            row-gap: 50ps;
+            column-gap: 100px;
+        }
+    }
+
     .main-container {
         width: 100%;
         justify-content: center;

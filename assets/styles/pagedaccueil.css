@@ -80,6 +80,7 @@ html, body {
   color: #353535;
 }
 
+/****** Responsive Design ******/
 @media screen and (min-width: 768px) {
   .header-nav .header-logo,
   .header-nav .header-logo-restaurants-page {
@@ -221,25 +222,9 @@ html, body {
   color: #ffffff;
   padding: 20px;
 }
-@media screen and (min-width: 768px) {
-  .footer {
-    padding-top: 60px;
-    padding-bottom: 30px;
-  }
-}
 .footer .footer-container {
   display: flex;
   flex-direction: column;
-}
-@media screen and (min-width: 768px) {
-  .footer .footer-container {
-    justify-content: flex-end;
-    align-items: center;
-    flex-direction: row;
-    width: 100%;
-    max-width: 1440px;
-    margin: 0 auto;
-  }
 }
 .footer .footer-container .footer-title {
   font-family: "Shrikhand", cursive;
@@ -247,22 +232,10 @@ html, body {
   font-size: 18px;
   margin-bottom: 16px;
 }
-@media screen and (min-width: 768px) {
-  .footer .footer-container .footer-title {
-    order: 2;
-    margin-right: 25px;
-  }
-}
 .footer .footer-container .footer-links {
   display: flex;
   flex-direction: column;
   list-style: none;
-}
-@media screen and (min-width: 768px) {
-  .footer .footer-container .footer-links {
-    justify-content: space-between;
-    gap: 40px;
-  }
 }
 .footer .footer-container .footer-links .footer-groupe {
   display: flex;
@@ -271,21 +244,10 @@ html, body {
   gap: 8px;
   margin-bottom: 0;
 }
-@media screen and (min-width: 768px) {
-  .footer .footer-container .footer-links .footer-groupe {
-    flex-direction: row;
-    gap: 20px;
-  }
-}
 .footer .footer-container .footer-links li {
   display: flex;
   align-items: center;
   gap: 8px;
-}
-@media screen and (min-width: 768px) {
-  .footer .footer-container .footer-links li {
-    margin: 0px;
-  }
 }
 .footer .footer-container .footer-links li .icon-footer {
   font-size: 16px;
@@ -297,20 +259,45 @@ html, body {
 .footer .footer-container .footer-links .footer-mention {
   margin: 0px;
 }
-@media screen and (min-width: 768px) {
-  .footer .footer-container .footer-links .footer-mention {
-    padding-left: 30px;
-  }
-}
 .footer .footer-container .footer-links .footer-groupe a {
   margin: 0px;
 }
+
+/****** Responsive Design ******/
 @media screen and (min-width: 768px) {
+  .footer {
+    padding-top: 57px;
+  }
+  .footer .footer-container {
+    justify-content: flex-end;
+    align-items: center;
+    flex-direction: row;
+    width: 100%;
+    max-width: 1440px;
+    margin: 0 auto;
+  }
+  .footer .footer-container .footer-title {
+    order: 2;
+    margin-right: 25px;
+  }
+  .footer .footer-container .footer-links {
+    justify-content: space-between;
+    gap: 40px;
+  }
+  .footer .footer-container .footer-links .footer-groupe {
+    flex-direction: row;
+    gap: 20px;
+  }
+  .footer .footer-container .footer-links li {
+    margin: 0px;
+  }
+  .footer .footer-container .footer-links .footer-mention {
+    padding-left: 30px;
+  }
   .footer .footer-container .footer-links .footer-groupe a {
     padding-right: 80px;
   }
 }
-
 a {
   color: inherit;
   text-decoration: none;
@@ -394,12 +381,6 @@ html, body {
   padding-top: 36px;
   padding-bottom: 57px;
 }
-@media screen and (min-width: 768px) {
-  .exploration-restaurant {
-    padding-top: 30px;
-    padding-bottom: 30px;
-  }
-}
 .exploration-restaurant .headline {
   display: flex;
   flex-direction: column;
@@ -407,22 +388,11 @@ html, body {
   align-items: center;
   text-align: center;
 }
-@media screen and (min-width: 768px) {
-  .exploration-restaurant .headline {
-    width: 700px;
-  }
-}
 .exploration-restaurant .headline .headline-title {
   font-size: 24px;
   font-weight: 700;
   width: 275px;
   margin: 0;
-}
-@media screen and (min-width: 768px) {
-  .exploration-restaurant .headline .headline-title {
-    width: 700px;
-    font-size: 40px;
-  }
 }
 .exploration-restaurant .headline .headline-text {
   color: #353535;
@@ -431,21 +401,11 @@ html, body {
   font-size: 18px;
   font-weight: 300;
 }
-@media screen and (min-width: 768px) {
-  .exploration-restaurant .headline .headline-text {
-    width: 700px;
-  }
-}
 
 /****** Fonctionnement ******/
 .section-fonctionnement {
   margin: 0 auto;
   padding: 28px 15px 58px 15px;
-}
-@media screen and (min-width: 768px) {
-  .section-fonctionnement {
-    padding-bottom: 50px;
-  }
 }
 .section-fonctionnement .fonctionnement-title {
   margin-bottom: 25px;
@@ -455,16 +415,6 @@ html, body {
   flex-direction: column;
   align-items: center;
   gap: 25px;
-}
-@media screen and (min-width: 768px) {
-  .section-fonctionnement .fonctionnement {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    gap: 25px;
-    padding: 0 15px;
-  }
 }
 .section-fonctionnement .fonctionnement .filtre-fonctionnement {
   display: flex;
@@ -510,12 +460,6 @@ html, body {
   padding-bottom: 58px;
   background-color: #F6F6F6;
 }
-@media screen and (min-width: 768px) {
-  .restaurants {
-    padding-top: 30px;
-    padding-bottom: 12px;
-  }
-}
 .restaurants .restaurant-title {
   padding-left: 15px;
   margin: 0;
@@ -527,15 +471,6 @@ html, body {
   gap: 20px;
   max-width: 600px;
   padding: 18px;
-}
-@media screen and (min-width: 768px) {
-  .restaurants .restaurants-cards {
-    grid-template-columns: repeat(2, 1fr);
-    max-width: 1080px;
-    row-gap: 50px;
-    -moz-column-gap: 100px;
-         column-gap: 100px;
-  }
 }
 .restaurants .restaurants-cards .card {
   background: white;
@@ -581,6 +516,40 @@ html, body {
 
 /****** Responsive Design ******/
 @media (min-width: 768px) {
+  .exploration-restaurant {
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
+  .exploration-restaurant .headline {
+    width: 700px;
+  }
+  .exploration-restaurant .headline .headline-title {
+    width: 700px;
+    font-size: 40px;
+  }
+  .exploration-restaurant .headline .headline-text {
+    width: 700px;
+  }
+  .section-fonctionnement {
+    padding-bottom: 50px;
+  }
+  .section-fonctionnement .fonctionnement {
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 0 15px;
+  }
+  .restaurants {
+    padding-top: 30px;
+    padding-bottom: 12px;
+  }
+  .restaurants .restaurants-cards {
+    grid-template-columns: repeat(2, 1fr);
+    max-width: 1080px;
+    row-gap: 50ps;
+    -moz-column-gap: 100px;
+         column-gap: 100px;
+  }
   .main-container {
     width: 100%;
     justify-content: center;
