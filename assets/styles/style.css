@@ -155,11 +155,13 @@ html, body {
 .card-saving .heart-checkbox {
   display: none;
 }
-.card-saving .heart-checkbox:checked + label .full-heart {
+.card-saving .heart-checkbox:checked + .heart-label .full-heart {
   opacity: 1;
+  transition: opacity 1s ease;
 }
-.card-saving .heart-checkbox:checked + label .empty-heart {
+.card-saving .heart-checkbox:checked + .heart-label .empty-heart {
   opacity: 0;
+  transition: opacity 1s ease;
 }
 .card-saving .heart-label {
   position: relative;
@@ -178,6 +180,7 @@ html, body {
 }
 .card-saving .heart-label .full-heart {
   opacity: 0;
+  transition: opacity 1s ease;
   background: linear-gradient(0deg, #9356DC 0%, #ff79da 95%);
   -webkit-background-clip: text;
           background-clip: text;
@@ -188,9 +191,11 @@ html, body {
 @media screen and (min-width: 768px) {
   .card-saving .heart-label:hover .full-heart {
     opacity: 1;
+    transition: opacity 1s ease;
   }
   .card-saving .heart-label:hover .empty-heart {
     opacity: 0;
+    transition: opacity 1s ease;
   }
 }
 a {

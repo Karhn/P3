@@ -1,20 +1,37 @@
 @import "variables";
 
-.card-saving {
+@mixin absolute-postion ($bottom: auto, $right: auto) {
     position: absolute;
-    bottom: 30px;
-    right: 30px;
+    bottom: $bottom;
+    right: $right;
+}
+
+@mixin heart-style {
+    font-size: 24px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: opacity 1s ease;
+}
+
+@mixin heart-opacity($opacity) {
+    opacity: $opacity;
+    transition: opacity 1s ease;
+}
+
+.card-saving {
+    @include absolute-postion(30px, 30px);
 
     .heart-checkbox {
         display: none;
 
         &:checked {
-            & + label {
+            + .heart-label {
                 .full-heart {
-                    opacity: 1;
+                    @include heart-opacity(1);
                 }
                 .empty-heart {
-                    opacity: 0;
+                    @include heart-opacity(0);
                 }
             }
         }
@@ -29,15 +46,11 @@
 
         .full-heart,
         .empty-heart {
-            font-size: 24px;
-            position: absolute;
-            top: 0;
-            left: 0;
-            transition: opacity 1s ease;
+            @include heart-style;
         }
 
         .full-heart {
-            opacity: 0;
+            @include heart-opacity(0);
             background: $color-background-btn;
             background-clip: text;
             color: transparent;
@@ -46,19 +59,22 @@
     }
 }
 
+@mixin hover-effect {
+    &:hover {
+        .full-heart {
+            @include heart-opacity(1);
+        }
+        .empty-heart {
+            @include heart-opacity(0)
+        }
+    }
+}
+
 @media screen and (min-width:768px) {
 
     .card-saving {
         .heart-label {
-            &:hover {
-                .full-heart {
-                    opacity: 1;
-                }
-                .empty-heart {
-                    opacity: 0;
-                }
-            }
+            @include hover-effect;
         }
-
     }
 }
