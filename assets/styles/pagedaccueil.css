@@ -546,7 +546,7 @@ html, body {
   .restaurants .restaurants-cards {
     grid-template-columns: repeat(2, 1fr);
     max-width: 1080px;
-    row-gap: 50ps;
+    row-gap: 50px;
     -moz-column-gap: 100px;
          column-gap: 100px;
   }
