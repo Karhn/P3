@@ -8,23 +8,42 @@
     height: 100vh;
     background: white;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     z-index: 9999;
     animation: fadeOut 4s ease-out forwards;
 
     .loader {
-        width: 50px;
-        height: 50px;
-        border: 5px solid #00000033;
-        border-top: 5px solid $color-primary;
-        animation: spin 4s linear infinite;
+        display: flex;
+        gap: 20px;
+
+        i {
+            font-size: 5rem;
+            color: $color-purple;
+            animation: pulse 3s infinite ease-in-out;
+        }
     }
 }
 
-@keyframes spin {
-    0% { transform:  rotate(0deg);}
-    100% { transform: rotate(360deg);}
+
+.loader i:nth-child(1) { animation-delay: 0s; } 
+.loader i:nth-child(2) { animation-delay: 0.25s; }
+.loader i:nth-child(3) { animation-delay: 0.5s; }
+
+@keyframes pulse {
+    0% {
+      transform: scale(0.5);
+      opacity: 0.3;
+    }
+    50% {
+      transform: scale(1.2);
+      opacity: 1;
+    }
+    100% {
+      transform: scale(0.5);
+      opacity: 0.3;
+    }
 }
 
 @keyframes fadeOut {
