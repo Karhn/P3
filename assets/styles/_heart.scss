@@ -51,8 +51,7 @@
 
         .full-heart {
             @include heart-opacity(0);
-            background: $color-background-btn;
-            background-clip: text;
+            background: $color-background-btn;            
             color: transparent;
             transition: opacity 1s ease;
         }

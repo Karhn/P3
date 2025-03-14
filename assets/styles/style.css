@@ -183,8 +183,6 @@ html, body {
   opacity: 0;
   transition: opacity 1s ease;
   background: linear-gradient(0deg, #9356DC 0%, #ff79da 95%);
-  -webkit-background-clip: text;
-          background-clip: text;
   color: transparent;
   transition: opacity 1s ease;
 }
